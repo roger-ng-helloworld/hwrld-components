@@ -1,0 +1,125 @@
+@import '../../../css/variables';
+
+:global(.hwrld) .hwrld {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  width: 230px;
+  z-index: 9990;
+
+  .btn-text {
+    color: $color-primary;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+  }
+
+  .arrow {
+    display: inline-block;
+    height: 10px;
+    width: 14px;
+  }
+
+  :global(.react-autosuggest__container) {
+    background-color: $color-bkgd;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding: 10px 0;
+
+  }
+
+  :global(.react-autosuggest__input) {
+    border: 1px solid #cccccc;
+		border-radius: 2px;
+		height: 25px;
+    margin-left: 10px;
+		padding-left: 5px;
+  }
+
+  :global(.react-autosuggest__suggestion) {
+    border-bottom: 1px solid #cccccc;
+    cursor: pointer;
+    padding: 10px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:global(.react-autosuggest__suggestion--focused),
+    :hover {
+      background-color: $color-primary;
+      color: $color-bkgd;
+    }
+
+    :global(.suggest-store-name) {
+      font-weight: bold;
+    }
+
+  }
+
+  .btn-change-agent {
+    display: inline-block;
+    background: url(http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg) -630px 0 no-repeat;
+    height: 25px;
+    position:absolute;
+    right: 10px;
+    top: 34px;
+    width: 25px;
+  }
+
+  &.active {
+    .arrow {
+      background: url(http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg) -240px 0 no-repeat;
+    }
+    :global(.react-autosuggest__container) {
+      display: block;
+    }
+
+    .btn-change-agent {
+      display: block;
+    }
+  }
+
+  &.inactive {
+    .arrow {
+      background: url(http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg) -180px 0 no-repeat;
+    }
+    :global(.react-autosuggest__container) {
+      display: none;
+    }
+
+    .btn-change-agent {
+      display: none;
+    }
+  }
+
+  :global(.react-autosuggest__suggestions-container) {
+    background-color: $color-bkgd;
+  }
+}
+
+@media (max-width: $break-small) {
+  :global(.hwrld) .hwrld {
+    margin: 0 0 10px 20px;
+    position: relative;
+
+    .btn-text {
+      text-align: left;
+    }
+
+    :global(.react-autosuggest__suggestions-container) {
+      border-left: 1px solid #cccccc;
+      border-right: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      border-radius: 0 0 2px 2px;
+      left: 0;
+      position: absolute;
+      width: 230px;
+      z-index: 8999;
+    }
+  }
+
+
+}

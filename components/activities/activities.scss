@@ -1,0 +1,136 @@
+@import '../../css/variables';
+
+.hwrld {
+	background-color: #ffffff;
+	max-width: $break-large; 
+
+	.list {
+		border-top: 1px dotted $color-text;
+	}
+
+	.list-item {
+		border-bottom: 1px dotted $color-text; 
+		padding: 20px 0;
+		position: relative;
+
+	}
+
+	.cta {
+		background-color: transparent;
+		height: 100%;
+		margin-top: -20px;
+		position: absolute;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.img-panel {
+		height: 90px;
+		overflow: hidden;
+		max-width: 200px;
+		width: 100%;
+
+	}
+
+	.title {
+		color: $color-primary;
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+
+	.star-base {
+		display: inline-block;
+		height: 10px;
+		width: 58px;
+    }
+
+	:global(.star-0) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -30px no-repeat;	
+	}
+
+	:global(.star-1) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -60px no-repeat;	
+	}
+
+	:global(.star-2) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -90px no-repeat;	
+	}
+
+	:global(.star-3) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -120px no-repeat;	
+	}
+
+	:global(.star-4) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -150px no-repeat;	
+	}
+
+	:global(.star-5) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -180px no-repeat;	
+	}
+
+	.blurb {
+		margin-top: 5px;
+	}
+
+    // arrows
+
+
+    .more-info {
+        color: $color-primary;
+        text-decoration: underline;
+	}
+    // arrows
+	.arrow-panel {
+		float: right;
+		i {
+			background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") -180px 0 no-repeat;
+			display: block;
+			height: 23px;
+			margin: 20px 0 0 4px;
+			width: 23px;
+		}
+	}
+
+	.price-container {
+		padding-top: 25px;
+	}	
+
+	.price-panel {
+		float: right;
+	}
+
+	.price {
+		color: $color-secondary;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: right;
+	}
+
+	.top-aggregator, .bottom-aggregator {
+		text-align: right;
+		text-transform: uppercase;
+
+	}
+
+	a.see-more {
+		border: 2px solid $color-secondary;
+		border-radius: 4px;
+		color: $color-secondary;
+		display: table;
+		font-weight: bold;
+		margin: 20px auto 0;
+		padding: 10px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	
+}
+
+@media (max-width: $break-small - 1px) {
+	.hwrld {
+		.title {
+			margin-top: 5px;
+		}
+	}
+}

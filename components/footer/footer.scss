@@ -1,0 +1,212 @@
+@import '../../css/variables';
+
+:global(.hwrld) .hwrld {
+	background-color: #f1f1f1;
+	float: left;
+	width: 100%;
+
+	.main-nav {
+    	background-color: $color-primary;
+    	border-bottom: 2px solid $color-bkgd;
+    	padding: 0 20px 18px;
+    	text-align: center;
+    	width: 100%;
+
+		a {
+    		color: $color-bkgd;
+    		display: inline-block;
+    		font-size: 12px;
+    		margin: 18px 10px 0;
+    		text-transform: uppercase;
+
+    	}
+
+    }
+
+    .main-content {
+    	margin: 0 auto;
+    	max-width: $break-large;
+    	width: 100%;
+    }
+
+    .left,
+    .right {
+    	float: left;
+    	padding-bottom: 20px;
+    	width: 49.5%;
+
+    }
+
+    .inner-left,
+    .inner-right {
+    	float: left;
+    	padding: 0 20px;
+    	text-align: center;
+    	width: 50%;
+
+    	li {
+    		border-bottom: 1px solid #cccccc;
+    		margin-top: 10px;
+    		padding-bottom: 10px;
+    		&:first-child {
+    			margin-top: 20px;
+    		}
+    	}
+
+    	a {
+    		font-size: 12px;
+    	}
+    }
+
+    .left {
+    	border-right: 2px solid $color-bkgd;
+    }
+
+    .inner-left {
+
+    }
+
+    .right {
+    }
+
+    .inner-right {
+
+    }
+
+    .inner-title {
+		color: $color-primary;
+		font-size: 18px;
+		margin-top: 20px;
+	}
+
+	.third-party-icon {
+		display: inline-block;
+		height: 30px;
+		width: 48px;
+		margin: 20px 10px 0 0;
+	}
+
+	.visa {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -300px 0 no-repeat;
+	}
+
+	.mastercard {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -360px 0 no-repeat;
+	}
+
+	.american-express {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -420px 0 no-repeat;
+	}
+
+	.iata {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -480px 0 no-repeat;
+	}
+
+	.atas {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -540px 0 no-repeat;
+	}
+
+	.app-download-text {
+		font-size: 12px;
+		margin-top: 20px;
+	}
+
+	.app-download-btn {
+		display: inline-block;
+		margin-top: 10px;
+		width: 150px;
+	}
+
+	.ios {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -180px -60px no-repeat;
+		height: 45px;
+	}
+
+	.android {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") 0px -60px no-repeat;
+		height: 53px;
+	}
+
+	.norton {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/norton.png") no-repeat;
+		display: inline-block;
+		height: 36px;
+		margin-top: 10px;
+		width: 67px;
+	}
+
+	.afta {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") 0px -120px no-repeat;
+		display: inline-block;
+		height: 148px;
+		margin-top: 10px;
+		width: 102px;
+	}
+
+    .social-container {
+    	background-color: $color-bkgd;
+    	float: left;
+    	padding: 0 20px 20px;
+    	text-align: center;
+    	width: 100%;
+
+
+    	.social {
+    		display: inline-block;
+    		height: 50px;
+    		margin: 20px 20px 0;
+    		width: 50px;
+    	}
+    }
+
+    .facebook {
+    	background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -360px -60px no-repeat;
+    }
+
+    .instagram {
+    	background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -420px -60px no-repeat;
+    }
+
+    .twitter {
+    	background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -480px -60px no-repeat;
+    }
+
+    .google {
+    	background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -540px -60px no-repeat;
+    }
+
+    .youtube {
+    	background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -600px -60px no-repeat;
+    }
+
+    .disclaimer {
+    	background-color: $color-bkgd;
+    	float: left;
+    	font-size: 12px;
+    	margin-top: 2px;
+    	padding: 20px 20px 40px;
+    	text-align: center;
+    	width: 100%;
+    }
+
+}
+
+@media (max-width: $break-small) {
+    :global(.hwrld) .hwrld {
+        .left,
+        .right {
+        	width: 100%;
+        }
+
+        .left {
+        	border-right: none;
+        }
+
+        .social-container {
+
+	    	.social {
+	    		margin: 20px 10px 0;
+	    	}
+	    }
+    }
+}

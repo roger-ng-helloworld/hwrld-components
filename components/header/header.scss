@@ -1,0 +1,30 @@
+@import "../../css/variables";
+
+.hwrld {
+    background-color: $color-bkgd;
+    float: left;
+    height: 60px;
+    position: relative;
+    width: 100%;
+    z-index: 10000;
+
+    .brand {
+        background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") 0 0 no-repeat;
+        display: block;
+        float: left;
+        height: 32px;
+        margin: 13px 0 0 20px;
+        width: 162px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .hwrld {
+        .brand {
+            left: 80px;
+            margin: 0;
+            position: absolute;
+            top: 14px;
+        }
+    }
+}

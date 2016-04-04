@@ -1,0 +1,132 @@
+@import '../../css/variables';
+
+.hwrld {
+	background-color: #ffffff;
+	border-top: 1px dotted $color-text;
+	max-width: $break-large; 
+	.title {
+		font-size: 16px;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.list {		
+		border-bottom: 1px dotted $color-text;
+	}
+
+	.list-item {
+		padding: 10px 0;
+		position: relative;
+	}
+
+	.cta {
+		background-color: transparent;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+	}
+
+	.hotel {
+		font-size: 14px;
+	}
+
+	.rating-container {
+		float: left;
+		width: 50%;
+	}
+
+	.star-base {
+		display: inline-block;
+		height: 10px;
+		width: 58px;
+
+	} 
+
+	:global(.star-0) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -30px no-repeat;	
+	}
+
+	:global(.star-1) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -60px no-repeat;	
+	}
+
+	:global(.star-2) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -90px no-repeat;	
+	}
+
+	:global(.star-3) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -120px no-repeat;	
+	}
+
+	:global(.star-4) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -150px no-repeat;	
+	}
+
+	:global(.star-5) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -180px no-repeat;	
+	}
+
+	.price-container {
+		float: left;
+		width: 50%;
+	}
+	
+	.price {
+		color: $color-secondary;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	i {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") -210px 0 no-repeat;
+		display: inline-block;
+		height: 13px;
+		width: 13px;
+	}
+
+	a.see-more {
+		border: 2px solid $color-secondary;
+		border-radius: 4px;
+		color: $color-secondary;
+		display: table;
+		font-weight: bold;
+		margin: 20px auto 0;
+		padding: 10px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	
+}
+
+@media (max-width: $break-medium - 1px) {
+	.hwrld {
+		.title {
+			text-align: left;
+		}
+
+		.list {		
+			padding-left: 0;
+			padding-bottom: 20px;
+		}
+
+		.list-item {
+			padding: 10px 0;
+			position: relative;
+		}
+
+		
+		.rating-container {
+			width: 40%;
+		}
+
+		.price-container {
+			width: 60%;
+		}
+
+
+		
+	}
+}

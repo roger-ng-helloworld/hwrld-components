@@ -1,0 +1,109 @@
+@import '../../css/variables';
+
+.hwrld {
+    height: 400px;
+	max-width: $break-large;
+
+	:global(.gm-style .gm-style-iw) {
+		left: 1px !important;
+		top: 1px !important;
+		width: 231px !important;
+
+		&>div {
+			overflow: visible !important;
+		} 
+	} 
+
+	.info-window {
+		position: relative;
+		width: 180px;
+	}
+
+	.cta {
+		background-color: transparent;
+		height: 200%;
+		position: absolute;
+		width: 200%;
+		z-index: 100;
+	}
+
+	.img-panel {
+		height: 90px;
+		overflow: hidden;
+        position: relative;
+		width: 250px;
+
+        img {
+            position: absolute;
+            top: -50%;
+            width: 250px;
+            
+        }
+	}
+
+	.desc {
+		padding: 20px 20px 0;
+		width: 230px;
+	}
+
+	.title {
+		color: $color-primary;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.stars {
+		height: 12px;
+	}
+
+	.arrow-panel {
+		float: right;
+		i {
+			background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") -180px 0 no-repeat;
+			display: block;
+			height: 23px;
+			margin: 20px 0 0 4px;
+			width: 23px;
+		}
+	}
+
+	.price-container {
+		padding: 20px 20px 0;
+		width: 230px;
+	}	
+
+	.price-panel {
+		float: right;
+	}
+
+	.price {
+		color: $color-secondary;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: right;
+	}
+
+	.top-aggregator, .bottom-aggregator {
+		text-align: right;
+		text-transform: uppercase;
+
+	}
+
+	a.see-more {
+		border: 2px solid $color-secondary;
+		border-radius: 4px;
+		color: $color-secondary;
+		display: table;
+		font-weight: bold;
+		margin: 20px auto 0;
+		padding: 10px 20px;
+		text-decoration: none;
+		text-transform: uppercase;
+	}	
+}
+
+@media (max-width: $break-small - 1px) {
+	.hwrld-widget {
+
+	}
+}

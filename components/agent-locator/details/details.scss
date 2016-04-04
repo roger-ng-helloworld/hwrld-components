@@ -1,0 +1,84 @@
+@import "../../../css/variables";
+@import "../../../css/mixins";
+
+:global(.hwrld) .hwrld {
+    float: left;
+    max-width: $break-large;
+    position: relative;
+    width: 100%;
+
+    .agent-mug {
+    	@include border-radius(50%);
+    	height: 55px;
+    	float: left;
+    	margin-right: 10px;
+    	overflow: hidden;
+    	width: 55px;
+    }
+
+	.store-name {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.store-name-text {
+		color: $color-primary;
+	}
+
+	.details {
+		margin-top: 6px;
+	}
+
+    .address-container,
+    .phone-container,
+    .opening-hours-container {
+        display: inline;
+    }
+
+	.icon {
+		display: inline-block;
+		height: 20px;
+		margin-right: 5px;
+		width: 20px;
+
+	}
+
+	.icon-address {
+		background: url(http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg) -300px -120px no-repeat;
+	}
+
+	.icon-phone {
+		background: url(http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg) -360px -120px no-repeat;
+		margin-left: 20px;
+	}
+
+	.icon-opening-hours {
+		background: url(http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg) -330px -120px no-repeat;
+		margin-left: 20px;
+	}
+
+
+}
+
+@media (max-width: $break-small) {
+    :global(.hwrld) .hwrld {
+        .details {
+            float: left;
+            //display: table;
+            //float: right;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .address-container,
+        .phone-container,
+        .opening-hours-container {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .icon {
+            margin-left: 0;
+        }
+    }
+}

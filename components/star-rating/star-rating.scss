@@ -1,0 +1,40 @@
+@import '../../css/variables';
+
+.hwrld-widget {
+	background-color: #ffffff;
+	max-width: $break-large; 
+
+	.star-base {
+		display: inline-block;
+		height: 10px;
+		width: 58px;
+	} 
+
+	:global(.star-0) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -30px no-repeat;	
+	}
+
+	:global(.star-1) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -60px no-repeat;	
+	}
+
+	:global(.star-2) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -90px no-repeat;	
+	}
+
+	:global(.star-3) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -120px no-repeat;	
+	}
+
+	:global(.star-4) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -150px no-repeat;	
+	}
+
+	:global(.star-5) {
+		background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 0 -180px no-repeat;	
+	}
+}
+
+@media (max-width: $break-medium - 1px) {
+	
+}

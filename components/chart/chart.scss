@@ -1,0 +1,129 @@
+@import '../../css/variables';
+
+.hwrld {
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	max-width: $break-large;
+	position: relative; 
+	
+	.title {
+		border-bottom: 1px solid #cccccc;
+		color: #666666;
+		font-size: 16px;
+		height: 38px;
+		left: 0;
+		line-height: 36px;
+		position: absolute;
+		text-align: center;
+		text-transform: capitalize;
+		top: 0;
+		width: 100%;
+	}
+
+	.y-axis {
+		border-right: 1px solid #ccc;
+		height: 126px;
+		left: 0;
+		position: absolute;
+		bottom: 0;
+		width: 30px;
+
+        .icon {            
+            height: 30px;
+            position: absolute;
+            width: 30px;
+        }
+	}
+
+	:global(.ct-line) {
+		fill: none;
+		stroke-dasharray: 2,2;
+		stroke-width: 1px;
+	}	
+
+	:global(.ct-label) {
+		color: #000000;
+		font-size: 10px;
+
+	}
+
+	&.weather {
+
+		:global(.ct-line) {
+			stroke: #E71939;
+		}
+
+		:global(.ct-area) {
+			fill: #f8d5da;
+		}
+
+        .top-icon {
+            background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") -115px 5px no-repeat;
+            top: 0;
+        }
+        
+        .bottom-icon {
+            background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") -145px 5px no-repeat;
+            bottom: 0;
+        }
+	}
+
+	&.price {
+		:global(.ct-line) {
+			stroke: #00B26B;
+		}
+
+		:global(.ct-point) {
+			stroke: #00B26B;
+			stroke-linecap: round;
+			stroke-width: 4px;    	
+		}
+
+		:global(.ct-area) {
+			fill: #cdf3e4;
+		}
+
+        .top-icon {
+            background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") -55px 5px no-repeat;
+            top: 0;
+        }
+        
+        .bottom-icon {
+            background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") -85px 5px no-repeat;
+            bottom: 0;
+        }
+	}
+	
+	&.popularity {
+		:global(.ct-line) {
+			stroke: #00BCE4;
+		}
+
+		:global(.ct-point) {
+			stroke: #00BCE4;
+			stroke-linecap: round;
+			stroke-width: 4px;    	
+		}
+
+		:global(.ct-area) {
+			fill: #ecf5fb;
+		}
+
+		.top-icon {
+            background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") 5px 5px no-repeat;
+            top: 0;
+        }
+        
+        .bottom-icon {
+            background: url($bkgd-base-url + "/l/Images/hwrld-widget/widget-icons.svg") -25px 5px no-repeat;
+            bottom: 0;
+        }        
+	}
+	
+}
+
+@media (max-width: $break-small - 1px) {
+	.hwrld {
+
+	}
+}

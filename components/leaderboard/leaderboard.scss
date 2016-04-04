@@ -1,0 +1,75 @@
+@import '../../css/variables';
+
+:global(.hwrld) .hwrld {
+    background-color: $color-bkgd;
+    font-size: 22px;
+	float: left;
+    width: 100%;
+
+    
+
+    .call, 
+    .book {
+        float: left;
+        padding: 20px;
+        width: 50%;
+    }
+
+    .call {
+        text-align: right;
+    }
+
+    .book {
+        text-align: left;
+    }
+
+    .icon {
+        display: inline-block;
+        height: 35px;
+        width: 35px;
+    }
+
+    .call-icon {
+        background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -120px -120px no-repeat;
+    }
+
+    .retail-icon {
+        background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -180px -120px no-repeat;
+    }
+
+    .online-icon {
+        background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -240px -120px no-repeat;
+    }
+
+    .text{
+        top:-10px;
+        left:5px;
+        position:relative;
+    }
+      
+}
+
+@media (max-width: $break-medium) {
+    :global(.hwrld) .hwrld {
+        .call,
+        .book {
+            text-align: center;
+        }
+
+        
+    }
+}
+
+@media (max-width: $break-small) {
+    :global(.hwrld) .hwrld {
+        .call,
+        .book {
+            width: 100%;
+        }
+
+        
+    }
+}
+
+
+

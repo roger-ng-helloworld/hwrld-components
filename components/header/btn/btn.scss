@@ -1,0 +1,43 @@
+@import '../../../css/variables';
+
+:global(.hwrld) .hwrld {
+    display: table;
+
+    &.full {
+        width: 100%;
+    }
+
+    a {
+        display: block;
+        height: 60px;
+
+        span {
+            color: $color-primary;
+            display: block;
+            font-family: arial;
+            font-size: 16px;
+            padding: 21px 10px;
+            text-transform: uppercase;
+        }        
+
+        &:hover {
+            span {
+                background-color: $color-primary;
+                color: $color-bkgd;
+            }            
+        }
+    }     
+}
+
+@media (max-width: 1150px) {
+    :global(.hwrld) .hwrld {
+        display: block; 
+
+        a span {
+            padding: 21px 20px;
+        }            
+    }
+}
+
+
+

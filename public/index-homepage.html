@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hompage</title>
+</head>
+<body>
+  <div class="js-header"></div>
+  <div class="js-agent"></div>
+  <div class="js-leaderboard"></div>
+  <div class="js-footer"></div>
+
+  <script src="react-homepage-v2.js"></script>
+  <script>
+  new HwrldHomepageV2({
+          header: {
+              element: '.js-header',
+              options: {}
+          },
+
+          agentLocator: {
+              element: '.js-agent',
+              options: {
+                  latLongDataUrl: 'http://test.agents.helloworld.com.au/api/agent/closest-agent-geolocation-search',
+                  postcodeDataUrl: 'http://test.agents.helloworld.com.au/api/agent/closest-agent-location-search'
+              }
+          },
+
+          leaderboard: {
+              element: '.js-leaderboard',
+              options: {}
+          },
+
+          footer: {
+              element: '.js-footer',
+              options: {}
+          }
+      });
+  </script>
+</body>
+</html>

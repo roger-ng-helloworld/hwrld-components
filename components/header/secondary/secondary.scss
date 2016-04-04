@@ -1,0 +1,172 @@
+@import '../../../css/variables';
+
+:global(.hwrld).cmpnt {
+    position: absolute;
+    right: 0;
+}
+
+:global(.hwrld) .hwrld {
+    li {
+    	border-left: 1px solid #e5e5e5;
+        float: left;
+        height: 60px;  
+    }
+
+    .help {
+        top: 300px;
+
+        .help-btn {
+            cursor: pointer;
+            display: block;
+            height: 60px;
+
+            span {
+                color: $color-primary;
+                display: block;
+                float: left;
+                font-family: arial;
+                font-size: 16px;
+                padding: 21px 10px;
+                text-transform: uppercase;
+            }
+
+            .arrow {
+                background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -180px 0 no-repeat;
+                display: block;
+                float: left;
+                height: 10px;
+                margin: 25px 10px 0 0;
+                width: 16px;
+            }
+
+            &:hover {
+                background-color: $color-primary;
+                span {
+                    color: $color-bkgd;
+                }
+                .arrow {
+                    background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -210px 0 no-repeat;
+                }            
+            }
+        }
+
+        .help-panel {
+            background-color: $color-bkgd;
+            position: absolute;
+            right: 0;
+            width: 300px;
+
+            .help-item {
+                border-top: 1px solid #e5e5e5;
+
+                a span {
+                    padding: 21px 20px;
+                }
+
+
+            }
+        }
+    }
+
+    .deactivate.help .help-panel {
+        display: none;
+    }
+
+    .activate.help .help-panel {
+        display: block;
+    }
+
+    .activate.help .help-btn {
+        background-color: $color-primary;
+        span {
+            color: $color-bkgd;
+        }
+        .arrow {
+            background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -270px 0 no-repeat;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+	:global(.hwrld).cmpnt {
+        clear: both;
+	    position: static;
+	}
+
+    :global(.hwrld) .hwrld {
+	    li {
+	    	border-left: none;
+	    	border-right: none;
+	        float: none;
+	        width: 300px;     
+	    }
+
+        .help .help-panel:last-child {
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .activate.help {
+            background-color: $color-bkgd;
+            height: 800px;
+            position: absolute;
+            top: 0;            
+
+            -webkit-transition: height 0.3s ease-out;
+            -moz-transition: height 0.3s ease-out;
+            -o-transition: height 0.3s ease-out;
+            transition: height 0.3s ease-out;
+
+            -webkit-transition: top 0.3s ease-out;
+            -moz-transition: top 0.3s ease-out;
+            -o-transition: top 0.3s ease-out;
+            transition: top 0.3s ease-out;            
+        }
+
+        .help .help-btn span {
+            padding: 21px 20px;
+        }
+
+        .help .help-btn {
+            position: relative;              
+            .arrow {
+                background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -240px 0 no-repeat;
+                position: absolute;
+                right: 20px;
+            }
+
+            &:hover {
+                .arrow {
+                    background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -270px 0 no-repeat;
+                }
+            } 
+        } 
+
+        .activate.help .help-btn {
+            background-color: $color-bkgd;
+            span {
+                color: $color-text;
+                position: absolute;
+                left: 80px;
+            }
+            .arrow {
+                left: 20px;
+                background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -180px 0 no-repeat;
+            }
+
+            &:hover {
+                background-color: $color-primary;
+                span {
+                    color: $color-bkgd;
+                }
+                .arrow {
+                    background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -210px 0 no-repeat;
+                }
+            } 
+        }    
+	}
+
+
+}
+
+
+

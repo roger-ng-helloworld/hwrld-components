@@ -1,0 +1,36 @@
+@import '../../../css/variables';
+
+:global(.hwrld) .hwrld {
+	margin-top: 20px;
+
+	.textfield {
+		border: 1px solid #9c9c9c;
+		border-radius: 2px;
+		display: block;
+		float: left;
+		height: 25px;
+		margin: 0 5px 0 10%;
+		padding-left: 5px;
+		width: 65%;
+	}
+
+	.search-btn {
+		background: url($bkgd-base-url + "http://test.content.helloworld.com.au/l/Images/homepage-v2/homepage-v2.svg") -600px 0 no-repeat;
+		cursor: pointer;
+		display: block;
+		float: left;
+		height: 25px;
+		width: 25px;
+	}
+}
+
+@media (max-width: $break-small) {
+    :global(.hwrld) .hwrld {
+        .textfield {
+			margin: 0 5px 0 5%;
+		}
+    }
+}
+
+
+
